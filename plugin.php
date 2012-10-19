@@ -4,8 +4,8 @@ class KokenHtmlInjector extends KokenPlugin {
 
 	function __construct()
 	{
-		$this->register_output_filter('before_closing_head', 'head');
-		$this->register_output_filter('before_closing_body', 'foot');
+		$this->register_filter('before_closing_head', 'head');
+		$this->register_filter('before_closing_body', 'foot');
 	}
 
 	function head()
