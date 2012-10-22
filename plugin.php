@@ -4,8 +4,8 @@ class KokenHtmlInjector extends KokenPlugin {
 
 	function __construct()
 	{
-		$this->register_filter('before_closing_head', 'head');
-		$this->register_filter('before_closing_body', 'foot');
+		$this->register_hook('before_closing_head', 'head');
+		$this->register_hook('before_closing_body', 'foot');
 	}
 
 	function head()
@@ -13,7 +13,7 @@ class KokenHtmlInjector extends KokenPlugin {
 
 		if (isset($this->data->header))
 		{
-			return $this->data->header;	
+			echo $this->data->header;	
 		}
 
 	}
@@ -23,7 +23,7 @@ class KokenHtmlInjector extends KokenPlugin {
 
 		if (isset($this->data->footer))
 		{
-			return $this->data->footer;	
+			echo $this->data->footer;	
 		}
 
 	}
