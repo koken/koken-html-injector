@@ -1,12 +1,14 @@
-{ 
+{
 	"name": "HTML Injector",
 	"version": "1.0",
 	"description": "Add arbitrary content before the the closing head and body tags.",
 	"demo": "http://koken.me",
 	"author": {
 		"name": "Koken",
-		"link": "http://koken.me"
+		"link": "https://store.koken.me/authors/koken"
 	},
+
+	"koken_version_required": "0.5.0",
 
 	"data": {
 		"header": {
