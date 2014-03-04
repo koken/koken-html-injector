@@ -1,1 +1,1 @@
-**HTML Injector** allows publishers to inject arbitrary code before the `<head>` and/or `<body>` closing tags in a site template. This plugin is compatible with any Koken theme.
+**HTML Injector** allows publishers to inject HTML markup before the closing `<head>` and `<body>` tags in every template published by their site theme. This plugin is most helpful to those who need to include third party Javascript links, tracking code, style markup, or anything else to enhance their site. Plugin is compatible with any Koken site theme.
