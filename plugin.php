@@ -10,20 +10,18 @@ class KokenHtmlInjector extends KokenPlugin {
 
 	function head()
 	{
-
 		if (isset($this->data->header))
 		{
-			echo $this->data->header;	
+			echo $this->data->header;
 		}
 
 	}
 
-	function foot()
+	function foot($data)
 	{
-
-		if (isset($this->data->footer))
+		if (isset($this->data->footer) && !$data['lightbox'])
 		{
-			echo $this->data->footer;	
+			echo $this->data->footer;
 		}
 
 	}
